@@ -36,7 +36,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dishes/1",
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -53,7 +53,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/1",
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -61,7 +61,7 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"1"
+								"5fdcfd4860e26f78e455a4da"
 							]
 						}
 					},
@@ -74,7 +74,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Pizza\",\n    \"description\": \"Tasty\"\n}",
+							"raw": "{\n    \"name\": \"Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        {\n            \"rating\": 5,\n            \"comment\": \"Very delicious ^_^\",\n            \"author\": \"Mayar Elabbasy\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -96,7 +96,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dishes/1",
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -110,7 +110,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/1",
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -118,7 +118,7 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"1"
+								"5fdcfd4860e26f78e455a4da"
 							]
 						}
 					},
@@ -153,13 +153,13 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dishes/1",
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Pizza & Italian Food\",\n    \"description\": \"Tasty ^_^\"\n}",
+							"raw": "{\n    \"price\": \"5.99\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -167,7 +167,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/1",
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -175,7 +175,7 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"1"
+								"5fdcfd4860e26f78e455a4da"
 							]
 						}
 					},
@@ -210,7 +210,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/dishes/1",
+					"name": "http://localhost:3000/dishes/5fdcfc2f60e26f78e455a4d8",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -224,7 +224,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/1",
+							"raw": "http://localhost:3000/dishes/5fdcfc2f60e26f78e455a4d8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -232,14 +232,13 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"1"
+								"5fdcfc2f60e26f78e455a4d8"
 							]
 						}
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Promotions",
@@ -473,8 +472,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Leaders",
@@ -708,9 +706,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
