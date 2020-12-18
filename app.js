@@ -10,8 +10,9 @@ const Dishes = require('./models/dishes');
 const url = 'mongodb://127.0.0.1:27017/Restaurant_App';
 const connect = mongoose.connect(url, { useNewUrlParser: true, 
                                         useUnifiedTopology: true, 
-                                        useCreateIndex: true });
-                                        
+                                        useCreateIndex: true,
+                                        useFindAndModify: false });
+
 connect.then((db) => {
   console.log("Connected correctly to MongoDB server ^_^");
 }, (err) => {
