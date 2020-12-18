@@ -244,6 +244,256 @@
 			"name": "Promotions",
 			"item": [
 				{
+					"name": "Comments",
+					"item": [
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments",
+										"5fdd1e7b4d09731ceceb3a72"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        {\n            \"rating\": 5,\n            \"comment\": \"Very delicious ^_^\",\n            \"author\": \"Mayar Elabbasy\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments",
+										"5fdd1e7b4d09731ceceb3a72"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rating\": 4,\n    \"comment\": \"Very tasty\",\n    \"author\": \"Mayar\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rating\": \"5\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments",
+										"5fdd1e7b4d09731ceceb3a72"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"rating\": \"5\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments",
+										"5fdd1e7b4d09731ceceb3a72"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"dishes",
+										"5fdcfd4860e26f78e455a4da",
+										"comments"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
 					"name": "http://localhost:3000/promotions",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -701,6 +951,256 @@
 							"path": [
 								"leaders",
 								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments",
+								"5fdd1e7b4d09731ceceb3a72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": 4,\n    \"comment\": \"Very tasty\",\n    \"author\": \"Mayar\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments",
+								"5fdd1e7b4d09731ceceb3a72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": 4,\n    \"comment\": \"Very tasty\",\n    \"author\": \"Mayar\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": \"5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments",
+								"5fdd1e7b4d09731ceceb3a72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\": \"5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments",
+								"5fdd1e7b4d09731ceceb3a72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dishes",
+								"5fdcfd4860e26f78e455a4da",
+								"comments"
 							]
 						}
 					},
