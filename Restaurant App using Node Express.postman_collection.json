@@ -244,256 +244,6 @@
 			"name": "Promotions",
 			"item": [
 				{
-					"name": "Comments",
-					"item": [
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments",
-										"5fdd1e7b4d09731ceceb3a72"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"name\": \"Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        {\n            \"rating\": 5,\n            \"comment\": \"Very delicious ^_^\",\n            \"author\": \"Mayar Elabbasy\"\n        }\n    ]\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments",
-										"5fdd1e7b4d09731ceceb3a72"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"rating\": 4,\n    \"comment\": \"Very tasty\",\n    \"author\": \"Mayar\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"rating\": \"5\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments",
-										"5fdd1e7b4d09731ceceb3a72"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"rating\": \"5\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments",
-										"5fdd1e7b4d09731ceceb3a72"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3000",
-									"path": [
-										"dishes",
-										"5fdcfd4860e26f78e455a4da",
-										"comments"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
-				{
 					"name": "http://localhost:3000/promotions",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -520,7 +270,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/promotions/1",
+					"name": "http://localhost:3000/promotions/5fde3eaf8d84a2271eebd15b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -537,7 +287,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/promotions/1",
+							"raw": "http://localhost:3000/promotions/5fde3eaf8d84a2271eebd15b",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -545,7 +295,7 @@
 							"port": "3000",
 							"path": [
 								"promotions",
-								"1"
+								"5fde3eaf8d84a2271eebd15b"
 							]
 						}
 					},
@@ -558,7 +308,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Test\",\n    \"description\": \"Test Description\"\n}",
+							"raw": "{\n      \"name\": \"Weekend Grand Buffet 2\",\n      \"image\": \"images/buffet.png\",\n      \"label\": \"New\",\n      \"price\": \"30.00\",\n      \"description\": \"Featuring . . .\",\n      \"featured\": false\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -580,13 +330,13 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/promotions/1",
+					"name": "http://localhost:3000/promotions/5fde3eaf8d84a2271eebd15b",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"12\",\n    \"description\": \"3456\"\n}",
+							"raw": "{\n      \"name\": \"Weekend Grand Buffet 2\",\n      \"image\": \"images/buffet.png\",\n      \"label\": \"New\",\n      \"price\": \"30.00\",\n      \"description\": \"Featuring . . .\",\n      \"featured\": false\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -594,7 +344,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/promotions/1",
+							"raw": "http://localhost:3000/promotions/5fde3eaf8d84a2271eebd15b",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -602,7 +352,7 @@
 							"port": "3000",
 							"path": [
 								"promotions",
-								"1"
+								"5fde3eaf8d84a2271eebd15b"
 							]
 						}
 					},
@@ -615,7 +365,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"12\",\n    \"description\": \"3456\"\n}",
+							"raw": "{\n    \"name\": \"12\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -637,13 +387,13 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/promotions/1",
+					"name": "http://localhost:3000/promotions/5fde3e4a8d84a2271eebd15a",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"12\",\n    \"description\": \"3456\"\n}",
+							"raw": "{\n    \"price\": \"18.00\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -651,7 +401,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/promotions/1",
+							"raw": "http://localhost:3000/promotions/5fde3e4a8d84a2271eebd15a",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -659,7 +409,7 @@
 							"port": "3000",
 							"path": [
 								"promotions",
-								"1"
+								"5fde3e4a8d84a2271eebd15a"
 							]
 						}
 					},
@@ -694,7 +444,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/promotions/1",
+					"name": "http://localhost:3000/promotions/5fde3e4a8d84a2271eebd15a",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -708,7 +458,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/promotions/1",
+							"raw": "http://localhost:3000/promotions/5fde3e4a8d84a2271eebd15a",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -716,7 +466,7 @@
 							"port": "3000",
 							"path": [
 								"promotions",
-								"1"
+								"5fde3e4a8d84a2271eebd15a"
 							]
 						}
 					},
