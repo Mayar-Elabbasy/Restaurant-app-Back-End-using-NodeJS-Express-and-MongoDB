@@ -71,10 +71,16 @@
 					"name": "http://localhost:3000/dishes",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        {\n            \"rating\": 5,\n            \"comment\": \"Very delicious ^_^\",\n            \"author\": \"Mayar Elabbasy\"\n        }\n    ]\n}",
+							"raw": "{\n    \"name\": \"Orange Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        {\n            \"rating\": 5,\n            \"comment\": \"Very delicious ^_^\",\n            \"author\": \"Mayar Elabbasy\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -99,7 +105,13 @@
 					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Pizza\",\n    \"description\": \"Tasty\"\n}",
@@ -128,7 +140,13 @@
 					"name": "http://localhost:3000/dishes",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Pizza & Italian Food\",\n    \"description\": \"Tasty ^_^\"\n}",
@@ -185,7 +203,13 @@
 					"name": "http://localhost:3000/dishes",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -213,7 +237,13 @@
 					"name": "http://localhost:3000/dishes/5fdcfc2f60e26f78e455a4d8",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
