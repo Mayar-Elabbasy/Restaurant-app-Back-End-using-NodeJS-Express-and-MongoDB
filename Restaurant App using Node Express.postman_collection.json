@@ -15,6 +15,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -53,7 +56,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
+							"raw": "http://localhost:3000/dishes/5fe649168015c15d3f3fa746",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -61,7 +64,7 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"5fdcfd4860e26f78e455a4da"
+								"5fe649168015c15d3f3fa746"
 							]
 						}
 					},
@@ -74,13 +77,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDg5MjY0OTUsImV4cCI6MTYwODkzMDA5NX0._8xJH23itDID3vc_8yQml3tcRUJdpSPAD42RbhRSWQI",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Orange Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        {\n            \"rating\": 5,\n            \"comment\": \"Very delicious ^_^\",\n            \"author\": \"Mayar Elabbasy\"\n        }\n    ]\n}",
+							"raw": "{\n    \"name\": \"Orange Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        \n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -838,10 +841,16 @@
 					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDg5MjY0OTUsImV4cCI6MTYwODkzMDA5NX0._8xJH23itDID3vc_8yQml3tcRUJdpSPAD42RbhRSWQI",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"rating\": 4,\n    \"comment\": \"Very tasty\",\n    \"author\": \"Mayar\"\n}",
+							"raw": "{\n    \"rating\": 4,\n    \"comment\": \"Very tasty\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -849,7 +858,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"raw": "http://localhost:3000/dishes/5fe649168015c15d3f3fa746/comments",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -857,7 +866,7 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"5fdcfd4860e26f78e455a4da",
+								"5fe649168015c15d3f3fa746",
 								"comments"
 							]
 						}
@@ -1013,7 +1022,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Mayar Yasser\",\n    \"password\": \"password\"\n}",
+							"raw": "{\n    \"username\": \"Mayar Elabbasy\",\n    \"password\": \"password\",\n    \"firstname\": \"Mayar\",\n    \"lastname\": \"Elabbasy\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1045,7 +1054,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Mayar Yasser\",\n    \"password\": \"password\"\n}",
+							"raw": "{\n    \"username\": \"Mayar Elabbasy\",\n    \"password\": \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1068,7 +1077,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:3000/logout",
+					"name": "http://localhost:3000/users/logout",
 					"request": {
 						"method": "GET",
 						"header": [],
