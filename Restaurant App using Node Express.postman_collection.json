@@ -983,7 +983,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Mayar Elabbasy\",\n    \"password\": \"password\"\n}",
+							"raw": "{\n    \"username\": \"Mayar Yasser\",\n    \"password\": \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1009,25 +1009,13 @@
 					"name": "http://localhost:3000/users/signin",
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "username",
-									"value": "Mayar Elabbasy",
-									"type": "string"
-								},
-								{
-									"key": "password",
-									"value": "password",
-									"type": "string"
-								}
-							]
+							"type": "noauth"
 						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\n    \"username\": \"Mayar Yasser\",\n    \"password\": \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
