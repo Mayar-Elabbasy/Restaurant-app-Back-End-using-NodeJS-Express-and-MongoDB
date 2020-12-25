@@ -4,10 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
-var session = require('express-session');
-var fileStore = require('session-file-store')(session);
+// var session = require('express-session');
+// var fileStore = require('session-file-store')(session);
 var passport = require('passport');
 
+var config = require('./config');
 var authenticate = require('./authenticate');
 
 var indexRouter = require('./routes/index');
@@ -16,7 +17,7 @@ var dishRouter = require('./routes/dishRouter');
 var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
 
-const url = 'mongodb://127.0.0.1:27017/Restaurant_App';
+const url = config.mongoUrl;
 const connect = mongoose.connect(url, { useNewUrlParser: true, 
                                         useUnifiedTopology: true, 
                                         useCreateIndex: true,
@@ -36,34 +37,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // app.use(cookieParser('12345-67890'));
-app.use(session({
-  name: 'session-id',
-  secret: '12345-67890',
-  saveUninitialized: false,
-  resave: false,
-  store: new fileStore()
-}));
+// app.use(session({
+//   name: 'session-id',
+//   secret: '12345-67890',
+//   saveUninitialized: false,
+//   resave: false,
+//   store: new fileStore()
+// }));
 
 app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.session());
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
-function auth (req, res, next) {
-  console.log(req.user);
-
-  if (!req.user) {
-    var err = new Error('You are not authenticated!');
-    err.status = 403;
-    next(err);
-  }
-  else {
-        next();
-  }
-}
-
-app.use(auth);
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -71,7 +56,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 app.use('/dishes',dishRouter);
 app.use('/promotions',promoRouter);
 app.use('/leaders',leaderRouter);
