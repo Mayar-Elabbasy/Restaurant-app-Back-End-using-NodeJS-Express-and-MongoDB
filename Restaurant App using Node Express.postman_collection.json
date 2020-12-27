@@ -1182,6 +1182,36 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "http://localhost:3000/users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU4ZTMzZWU3ZmEyNzM3NjViM2M0YzgiLCJpYXQiOjE2MDkwOTgyMjYsImV4cCI6MTYwOTEzNDIyNn0.U0kuyg6ExqfH82AGdLzfR3Z4oTrOc7huFx2NJtcPLlY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
