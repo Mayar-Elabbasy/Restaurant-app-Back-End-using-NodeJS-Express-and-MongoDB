@@ -156,7 +156,7 @@ dishRouter.route('/:dishId/comments')
     res.statusCode = 403;
     res.end(`PUT operation not supported on /dishes/${req.params.dishId}/comments`);
 })
-.delete(authenticate.verifyUser, (req, res, next) => {
+.delete(authenticate.verifyUser,authenticate.verifyAdmin, (req, res, next) => {
     Dishes.findById(req.params.dishId)
     .then((dish) => {
         if (dish != null) {
@@ -217,7 +217,9 @@ dishRouter.route('/:dishId/comments/:commentId')
 .put(authenticate.verifyUser, (req, res, next) => {
     Dishes.findById(req.params.dishId)
     .then((dish) => {
-        if (dish != null && dish.comments.id(req.params.commentId) != null) {
+        // console.log("dish  ",dish.comments[0].author);
+        // console.log("user ",req.user._id);
+        if (dish != null && dish.comments.id(req.params.commentId) != null && req.user._id.equals(dish.comments[0].author)) {
             if (req.body.rating) {
                 dish.comments.id(req.params.commentId).rating = req.body.rating;
             }
@@ -239,6 +241,12 @@ dishRouter.route('/:dishId/comments/:commentId')
             err.status = 404;
             return next(err);
         }
+        else if(req.user._id != dish.comments[0].author) {
+            // console.log("You are not authorized to perform this operation!");
+            var err = new Error('You are not authorized to perform this operation!');
+            err.status = 403;
+            return next(err);
+        }
         else {
             err = new Error('Comment ' + req.params.commentId + ' not found');
             err.status = 404;
@@ -250,7 +258,7 @@ dishRouter.route('/:dishId/comments/:commentId')
 .delete(authenticate.verifyUser, (req, res, next) => {
     Dishes.findById(req.params.dishId)
     .then((dish) => {
-        if (dish != null && dish.comments.id(req.params.commentId) != null) {
+        if (dish != null && dish.comments.id(req.params.commentId) != null  && req.user._id.equals(dish.comments[0].author)) {
             dish.comments.id(req.params.commentId).remove();
             dish.save()
             .then((dish) => {
@@ -265,6 +273,12 @@ dishRouter.route('/:dishId/comments/:commentId')
         else if (dish == null) {
             err = new Error('Dish ' + req.params.dishId + ' not found');
             err.status = 404;
+            return next(err);
+        }
+        else if(req.user._id != dish.comments[0].author) {
+            // console.log("You are not authorized to perform this operation!");
+            var err = new Error('You are not authorized to perform this operation!');
+            err.status = 403;
             return next(err);
         }
         else {
