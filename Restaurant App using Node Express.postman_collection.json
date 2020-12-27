@@ -840,7 +840,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
+							"raw": "http://localhost:3000/dishes/5fe649168015c15d3f3fa746/comments",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -848,7 +848,7 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"5fdcfd4860e26f78e455a4da",
+								"5fe649168015c15d3f3fa746",
 								"comments"
 							]
 						}
@@ -922,7 +922,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDg5MjY0OTUsImV4cCI6MTYwODkzMDA5NX0._8xJH23itDID3vc_8yQml3tcRUJdpSPAD42RbhRSWQI",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkxMDM4OTMsImV4cCI6MTYwOTEzOTg5M30.NgxlXiPupoPb_IJ1V1gNBFaOHro5GYYaAXP4fIv4NNY",
 								"type": "text"
 							}
 						],
@@ -955,7 +955,13 @@
 					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkxMDM4OTMsImV4cCI6MTYwOTEzOTg5M30.NgxlXiPupoPb_IJ1V1gNBFaOHro5GYYaAXP4fIv4NNY",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"rating\": \"5\"\n}",
@@ -966,7 +972,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"raw": "http://localhost:3000/dishes/5fe649168015c15d3f3fa746/comments/5fe649318015c15d3f3fa747",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -974,9 +980,9 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"5fdcfd4860e26f78e455a4da",
+								"5fe649168015c15d3f3fa746",
 								"comments",
-								"5fdd1e7b4d09731ceceb3a72"
+								"5fe649318015c15d3f3fa747"
 							]
 						}
 					},
@@ -986,7 +992,13 @@
 					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkxMDI2MjMsImV4cCI6MTYwOTEzODYyM30.09lyZC_yJExAThIVnmSLsRdO3Bb8GnxJRauMR566JsU",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"rating\": \"5\"\n}",
@@ -1016,7 +1028,13 @@
 					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkxMDQyMzIsImV4cCI6MTYwOTE0MDIzMn0.dtn5l9n0lsVhNtR_KaeoZG8zQQNYirp_7BwxCxQmHW8",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -1027,7 +1045,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da/comments/5fdd1e7b4d09731ceceb3a72",
+							"raw": "http://localhost:3000/dishes/5fe649168015c15d3f3fa746/comments/5fe8fa64235516539083d2d7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1035,9 +1053,9 @@
 							"port": "3000",
 							"path": [
 								"dishes",
-								"5fdcfd4860e26f78e455a4da",
+								"5fe649168015c15d3f3fa746",
 								"comments",
-								"5fdd1e7b4d09731ceceb3a72"
+								"5fe8fa64235516539083d2d7"
 							]
 						}
 					},
@@ -1139,7 +1157,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"123456\"\n}",
+							"raw": "{\n    \"username\": \"Mayar Elabbasy\",\n    \"password\": \"password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
