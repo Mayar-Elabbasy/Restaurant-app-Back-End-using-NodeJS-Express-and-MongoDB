@@ -77,13 +77,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDg5MjY0OTUsImV4cCI6MTYwODkzMDA5NX0._8xJH23itDID3vc_8yQml3tcRUJdpSPAD42RbhRSWQI",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU4ZTMzZWU3ZmEyNzM3NjViM2M0YzgiLCJpYXQiOjE2MDkwOTgyMjYsImV4cCI6MTYwOTEzNDIyNn0.U0kuyg6ExqfH82AGdLzfR3Z4oTrOc7huFx2NJtcPLlY",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Orange Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"7.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty chocolate cake.\",\n    \"comments\": [\n        \n    ]\n}",
+							"raw": "{\n    \"name\": \"Vanilla Cake\",\n    \"image\": \"images/cake.png\",\n    \"category\": \"Desserts\",\n    \"label\": \"Tasty\",\n    \"price\": \"9.99\",\n    \"featured\": \"true\",\n    \"description\": \"Tasty vanilla cake.\",\n    \"comments\": [\n        \n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -146,7 +146,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
 								"type": "text"
 							}
 						],
@@ -177,7 +177,13 @@
 					"name": "http://localhost:3000/dishes/5fdcfd4860e26f78e455a4da",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"price\": \"5.99\"\n}",
@@ -209,7 +215,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
 								"type": "text"
 							}
 						],
@@ -243,7 +249,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDg5MTg2NjcsImV4cCI6MTYwODkyMjI2N30.wAEf74YPANHggFcrA_tfKaDEEBPEAhNQUcFbB2hds40",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
 								"type": "text"
 							}
 						],
@@ -338,7 +344,13 @@
 					"name": "http://localhost:3000/promotions",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n      \"name\": \"Weekend Grand Buffet 2\",\n      \"image\": \"images/buffet.png\",\n      \"label\": \"New\",\n      \"price\": \"30.00\",\n      \"description\": \"Featuring . . .\",\n      \"featured\": false\n}\n",
@@ -366,7 +378,13 @@
 					"name": "http://localhost:3000/promotions/5fde3eaf8d84a2271eebd15b",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n      \"name\": \"Weekend Grand Buffet 2\",\n      \"image\": \"images/buffet.png\",\n      \"label\": \"New\",\n      \"price\": \"30.00\",\n      \"description\": \"Featuring . . .\",\n      \"featured\": false\n}\n",
@@ -395,7 +413,13 @@
 					"name": "http://localhost:3000/promotions",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"12\"\n}",
@@ -423,7 +447,13 @@
 					"name": "http://localhost:3000/promotions/5fde3e4a8d84a2271eebd15a",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"price\": \"18.00\"\n}\n",
@@ -452,7 +482,13 @@
 					"name": "http://localhost:3000/promotions",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -480,7 +516,13 @@
 					"name": "http://localhost:3000/promotions/5fde3e4a8d84a2271eebd15a",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -572,7 +614,13 @@
 					"name": "http://localhost:3000/leaders",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n      \"name\": \"Peter Jhon\",\n      \"image\": \"images/alberto.png\",\n      \"designation\": \"Chief Epicurious Officer\",\n      \"abbr\": \"CEO\",\n      \"description\": \"Our CEO, Peter, . . .\",\n      \"featured\": false\n}\n",
@@ -600,7 +648,13 @@
 					"name": "http://localhost:3000/leaders/5fde487e4c8fdf301d49e770",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n      \"name\": \"Peter Pan\",\n      \"image\": \"images/alberto.png\",\n      \"designation\": \"Chief Epicurious Officer\",\n      \"abbr\": \"CEO\",\n      \"description\": \"Our CEO, Peter, . . .\",\n      \"featured\": false\n}",
@@ -629,7 +683,13 @@
 					"name": "http://localhost:3000/leaders",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Peter Alex\"\n}",
@@ -657,7 +717,13 @@
 					"name": "http://localhost:3000/leaders/5fde487e4c8fdf301d49e770",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Peter Alex\"\n}",
@@ -686,7 +752,13 @@
 					"name": "http://localhost:3000/leaders",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -714,7 +786,13 @@
 					"name": "http://localhost:3000/leaders/5fde487e4c8fdf301d49e770",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -1022,7 +1100,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Mayar Elabbasy\",\n    \"password\": \"password\",\n    \"firstname\": \"Mayar\",\n    \"lastname\": \"Elabbasy\"\n}",
+							"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"123456\",\n    \"firstname\": \"Restaurant\",\n    \"lastname\": \"Admin\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1051,10 +1129,17 @@
 							"type": "noauth"
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"Mayar Elabbasy\",\n    \"password\": \"password\"\n}",
+							"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
