@@ -9,8 +9,17 @@ var router = express.Router();
 router.use(bodyParser.json());
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/', authenticate.verifyUser, authenticate.verifyAdmin, function(req, res, next) {
+  User.find({})
+    .then((users) => {
+        res.setHeader('Content-Type', 'application/json');
+        res.statusCode = 200;
+        res.json({ 
+                    "message": "Fetched all the users successfully!",
+                    "users": users
+                });
+    }, (err) =>  next(err))
+    .catch((err) => next(err));
 });
 
 // ======================={Sign Up}============================================
