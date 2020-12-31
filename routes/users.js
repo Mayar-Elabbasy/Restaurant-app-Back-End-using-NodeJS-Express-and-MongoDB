@@ -1,15 +1,18 @@
-var express = require('express');
-var passport = require('passport');
+const express = require('express');
+const passport = require('passport');
 
 const bodyParser = require('body-parser');
-var User = require('../models/users');
-var authenticate = require('../authenticate');
+const User = require('../models/users');
+const authenticate = require('../authenticate');
+const cors = require('./cors');
 
-var router = express.Router();
+const router = express.Router();
 router.use(bodyParser.json());
 
 /* GET users listing. */
-router.get('/', authenticate.verifyUser, authenticate.verifyAdmin, function(req, res, next) {
+router
+.options(cors.corsWithOptions, (req, res) => { res.sendStatus(200); })
+.get('/', cors.cors, authenticate.verifyUser, authenticate.verifyAdmin, function(req, res, next) {
   User.find({})
     .then((users) => {
         res.setHeader('Content-Type', 'application/json');
