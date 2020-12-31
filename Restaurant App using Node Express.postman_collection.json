@@ -617,13 +617,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2NDUwNTJmNjhlNDU3MDhmNmIzOTIiLCJpYXQiOjE2MDkwOTYxMDksImV4cCI6MTYwOTA5OTcwOX0.yrXOcTaL4sUEtzFtCuvOy625NTV8NgLkQ-1THGfNJxE",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU4ZTMzZWU3ZmEyNzM3NjViM2M0YzgiLCJpYXQiOjE2MDk0MTc3MzAsImV4cCI6MTYwOTQ1MzczMH0.rTMYpBJlmgpHvP0U5CeSJsqO2S5F-m24dXX05LPTi7M",
+								"type": "text"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n      \"name\": \"Peter Jhon\",\n      \"image\": \"images/alberto.png\",\n      \"designation\": \"Chief Epicurious Officer\",\n      \"abbr\": \"CEO\",\n      \"description\": \"Our CEO, Peter, . . .\",\n      \"featured\": false\n}\n",
+							"raw": "{\n      \"name\": \"Ahmed\",\n      \"image\": \"images/alberto.png\",\n      \"designation\": \"Chief Epicurious Officer\",\n      \"abbr\": \"CEO\",\n      \"description\": \"Our CEO, Ahmed, . . .\",\n      \"featured\": false\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1264,6 +1269,163 @@
 							"port": "3000",
 							"path": [
 								"imageUpload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favorites",
+			"item": [
+				{
+					"name": "http://localhost:3000/favorites",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDk0MzU0MTcsImV4cCI6MTYwOTQ3MTQxN30.BIGGGqsA-EU4Ueoo3Dkt_f2EWFuDlG03133j1-SC2M8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/favorites",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDk0MzU0MTcsImV4cCI6MTYwOTQ3MTQxN30.BIGGGqsA-EU4Ueoo3Dkt_f2EWFuDlG03133j1-SC2M8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n    \"_id\": \"5fe649168015c15d3f3fa746\"\n},\n{\n    \"_id\": \"5fe8e522e7fa273765b3c4c9\"\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/favorites/5fe649168015c15d3f3fa746 Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDk0MzU0MTcsImV4cCI6MTYwOTQ3MTQxN30.BIGGGqsA-EU4Ueoo3Dkt_f2EWFuDlG03133j1-SC2M8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favorites/5feddd784ab65b3ab91a6666",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favorites",
+								"5feddd784ab65b3ab91a6666"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/favorites",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDk0MzU0MTcsImV4cCI6MTYwOTQ3MTQxN30.BIGGGqsA-EU4Ueoo3Dkt_f2EWFuDlG03133j1-SC2M8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/favorites",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/favorites/5fe649168015c15d3f3fa746",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU2MDZkNTc5NzUxYTJmNDNhOWM3Y2IiLCJpYXQiOjE2MDk0MzU0MTcsImV4cCI6MTYwOTQ3MTQxN30.BIGGGqsA-EU4Ueoo3Dkt_f2EWFuDlG03133j1-SC2M8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/favorites/5fe649168015c15d3f3fa746",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favorites",
+								"5fe649168015c15d3f3fa746"
 							]
 						}
 					},
