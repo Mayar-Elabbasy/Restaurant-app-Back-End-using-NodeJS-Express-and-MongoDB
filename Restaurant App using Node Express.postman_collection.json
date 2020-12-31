@@ -1230,6 +1230,46 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "images",
+			"item": [
+				{
+					"name": "http://localhost:3000/imageUpload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmU4ZTMzZWU3ZmEyNzM3NjViM2M0YzgiLCJpYXQiOjE2MDk0MTc3MzAsImV4cCI6MTYwOTQ1MzczMH0.rTMYpBJlmgpHvP0U5CeSJsqO2S5F-m24dXX05LPTi7M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageFile",
+									"type": "file",
+									"src": "/home/mayar/Desktop/index.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/imageUpload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"imageUpload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
